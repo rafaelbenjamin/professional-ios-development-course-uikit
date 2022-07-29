@@ -14,6 +14,8 @@
 		833B3A9A287B4AA80030FE64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 833B3A98287B4AA80030FE64 /* LaunchScreen.storyboard */; };
 		833B3AA6287B4F1B0030FE64 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833B3AA5287B4F1B0030FE64 /* LoginView.swift */; };
 		83488BC3288F2B1100778692 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83488BC2288F2B1100778692 /* ShakeyBellView.swift */; };
+		835C9F642894598400DF8F63 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C9F632894598400DF8F63 /* Date+Utils.swift */; };
+		835C9F6628945A3D00DF8F63 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C9F6528945A3D00DF8F63 /* AccountSummaryViewController+Networking.swift */; };
 		836B4A40287CC04C0047F6B6 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B4A3F287CC04C0047F6B6 /* OnboardingContainerViewController.swift */; };
 		836E0D892886314B00C71942 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E0D882886314B00C71942 /* CurrencyFormatterTests.swift */; };
 		8376C1BD2880FCA600C5AB0C /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8376C1BC2880FCA600C5AB0C /* UIViewController+Utils.swift */; };
@@ -50,6 +52,8 @@
 		833B3A9B287B4AA80030FE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		833B3AA5287B4F1B0030FE64 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		83488BC2288F2B1100778692 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
+		835C9F632894598400DF8F63 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
+		835C9F6528945A3D00DF8F63 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 		836B4A3F287CC04C0047F6B6 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		836E0D7F288630A900C71942 /* BankeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		836E0D882886314B00C71942 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				83A2AFB12882355A00461B59 /* AccountSummaryViewController.swift */,
+				835C9F6528945A3D00DF8F63 /* AccountSummaryViewController+Networking.swift */,
 				830C3EFD2883552400AD9E0C /* Header */,
 				830C3EFE2883553A00AD9E0C /* Cells */,
 			);
@@ -197,6 +202,7 @@
 				8376C1BC2880FCA600C5AB0C /* UIViewController+Utils.swift */,
 				83FEB2BA2884E79C00361188 /* Decimal+Utils.swift */,
 				83D881192888DA4900BBA476 /* UITextField+SecureToggle.swift */,
+				835C9F632894598400DF8F63 /* Date+Utils.swift */,
 				83FEB2BC2884E7D100361188 /* CurrencyFormatter.swift */,
 				83D881172888D79900BBA476 /* NSNotificationName.swift */,
 			);
@@ -306,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8376C1BD2880FCA600C5AB0C /* UIViewController+Utils.swift in Sources */,
+				835C9F642894598400DF8F63 /* Date+Utils.swift in Sources */,
 				833B3AA6287B4F1B0030FE64 /* LoginView.swift in Sources */,
 				83F71BBA287F7AF6002506AA /* LocalState.swift in Sources */,
 				83A2AFB4288237B300461B59 /* AccountSummaryHeaderView.swift in Sources */,
@@ -322,6 +329,7 @@
 				83A2AFB22882355A00461B59 /* AccountSummaryViewController.swift in Sources */,
 				833B3A8E287B4AA60030FE64 /* AppDelegate.swift in Sources */,
 				836B4A40287CC04C0047F6B6 /* OnboardingContainerViewController.swift in Sources */,
+				835C9F6628945A3D00DF8F63 /* AccountSummaryViewController+Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
