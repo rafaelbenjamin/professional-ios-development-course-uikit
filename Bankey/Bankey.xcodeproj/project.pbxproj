@@ -16,6 +16,8 @@
 		83488BC3288F2B1100778692 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83488BC2288F2B1100778692 /* ShakeyBellView.swift */; };
 		835C9F642894598400DF8F63 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C9F632894598400DF8F63 /* Date+Utils.swift */; };
 		835C9F6628945A3D00DF8F63 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C9F6528945A3D00DF8F63 /* AccountSummaryViewController+Networking.swift */; };
+		83651C872897346E00136EEF /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83651C862897346E00136EEF /* ProfileTests.swift */; };
+		83651C89289734EE00136EEF /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83651C88289734EE00136EEF /* AccountTests.swift */; };
 		836B4A40287CC04C0047F6B6 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B4A3F287CC04C0047F6B6 /* OnboardingContainerViewController.swift */; };
 		836E0D892886314B00C71942 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E0D882886314B00C71942 /* CurrencyFormatterTests.swift */; };
 		8376C1BD2880FCA600C5AB0C /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8376C1BC2880FCA600C5AB0C /* UIViewController+Utils.swift */; };
@@ -54,6 +56,8 @@
 		83488BC2288F2B1100778692 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
 		835C9F632894598400DF8F63 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		835C9F6528945A3D00DF8F63 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
+		83651C862897346E00136EEF /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
+		83651C88289734EE00136EEF /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		836B4A3F287CC04C0047F6B6 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		836E0D7F288630A900C71942 /* BankeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		836E0D882886314B00C71942 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
@@ -167,6 +171,23 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		83651C832897328000136EEF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				836E0D882886314B00C71942 /* CurrencyFormatterTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		83651C842897328B00136EEF /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				83651C862897346E00136EEF /* ProfileTests.swift */,
+				83651C88289734EE00136EEF /* AccountTests.swift */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
 		836B4A3E287CC02D0047F6B6 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +200,8 @@
 		836E0D80288630A900C71942 /* BankeyTests */ = {
 			isa = PBXGroup;
 			children = (
-				836E0D882886314B00C71942 /* CurrencyFormatterTests.swift */,
+				83651C842897328B00136EEF /* AccountSummary */,
+				83651C832897328000136EEF /* Utils */,
 			);
 			path = BankeyTests;
 			sourceTree = "<group>";
@@ -338,6 +360,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				836E0D892886314B00C71942 /* CurrencyFormatterTests.swift in Sources */,
+				83651C89289734EE00136EEF /* AccountTests.swift in Sources */,
+				83651C872897346E00136EEF /* ProfileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
