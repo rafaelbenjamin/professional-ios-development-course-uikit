@@ -24,6 +24,8 @@
 		836E0D892886314B00C71942 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E0D882886314B00C71942 /* CurrencyFormatterTests.swift */; };
 		8376C1BD2880FCA600C5AB0C /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8376C1BC2880FCA600C5AB0C /* UIViewController+Utils.swift */; };
 		8376C1BF2880FD1E00C5AB0C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8376C1BE2880FD1E00C5AB0C /* MainViewController.swift */; };
+		839B6DBA28A1C04500F344F2 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B6DB928A1C04500F344F2 /* ProfileManager.swift */; };
+		839B6DBC28A1C18800F344F2 /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B6DBB28A1C18800F344F2 /* AccountSummaryViewControllerTests.swift */; };
 		83A2AFB22882355A00461B59 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2AFB12882355A00461B59 /* AccountSummaryViewController.swift */; };
 		83A2AFB4288237B300461B59 /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2AFB3288237B300461B59 /* AccountSummaryHeaderView.swift */; };
 		83A2AFB6288237E100461B59 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A2AFB5288237E100461B59 /* AccountSummaryHeaderView.xib */; };
@@ -67,6 +69,8 @@
 		836E0D882886314B00C71942 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
 		8376C1BC2880FCA600C5AB0C /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		8376C1BE2880FD1E00C5AB0C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		839B6DB928A1C04500F344F2 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		839B6DBB28A1C18800F344F2 /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		83A2AFB12882355A00461B59 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		83A2AFB3288237B300461B59 /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		83A2AFB5288237E100461B59 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 			children = (
 				83651C862897346E00136EEF /* ProfileTests.swift */,
 				83651C88289734EE00136EEF /* AccountTests.swift */,
+				839B6DBB28A1C18800F344F2 /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -212,6 +217,14 @@
 			path = BankeyTests;
 			sourceTree = "<group>";
 		};
+		839B6DB828A1C02F00F344F2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				839B6DB928A1C04500F344F2 /* ProfileManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		83A2AFB02882353700461B59 /* AccountSummary */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +232,7 @@
 				835C9F6528945A3D00DF8F63 /* AccountSummaryViewController+Networking.swift */,
 				830C3EFD2883552400AD9E0C /* Header */,
 				830C3EFE2883553A00AD9E0C /* Cells */,
+				839B6DB828A1C02F00F344F2 /* Networking */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -342,6 +356,7 @@
 				8376C1BD2880FCA600C5AB0C /* UIViewController+Utils.swift in Sources */,
 				83651C8D289F3BD400136EEF /* SkeletonCell.swift in Sources */,
 				835C9F642894598400DF8F63 /* Date+Utils.swift in Sources */,
+				839B6DBA28A1C04500F344F2 /* ProfileManager.swift in Sources */,
 				833B3AA6287B4F1B0030FE64 /* LoginView.swift in Sources */,
 				83F71BBA287F7AF6002506AA /* LocalState.swift in Sources */,
 				83A2AFB4288237B300461B59 /* AccountSummaryHeaderView.swift in Sources */,
@@ -370,6 +385,7 @@
 				836E0D892886314B00C71942 /* CurrencyFormatterTests.swift in Sources */,
 				83651C89289734EE00136EEF /* AccountTests.swift in Sources */,
 				83651C872897346E00136EEF /* ProfileTests.swift in Sources */,
+				839B6DBC28A1C18800F344F2 /* AccountSummaryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
