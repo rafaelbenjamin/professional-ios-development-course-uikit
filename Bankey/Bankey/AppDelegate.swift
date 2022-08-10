@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let loginViewController = LoginViewController()
     let onboardingViewController = OnboardingContainerViewController()
     let mainViewController = MainViewController()
+    let passwordViewController = PasswordViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -39,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func displayLogin(){
-        setRootViewController(loginViewController)
+        setRootViewController(passwordViewController)
     }
     
     private func displayNextScreen(){

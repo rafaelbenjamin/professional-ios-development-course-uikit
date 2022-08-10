@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		830C3F002883556700AD9E0C /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C3EFF2883556700AD9E0C /* AccountSummaryCell.swift */; };
+		832F285228CD0ABF000BE496 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F285128CD0ABF000BE496 /* PasswordTextField.swift */; };
+		832F285428CD0ABF000BE496 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F285328CD0ABF000BE496 /* PasswordViewController.swift */; };
 		833B3A8E287B4AA60030FE64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833B3A8D287B4AA60030FE64 /* AppDelegate.swift */; };
 		833B3A92287B4AA60030FE64 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833B3A91287B4AA60030FE64 /* LoginViewController.swift */; };
 		833B3A97287B4AA80030FE64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833B3A96287B4AA80030FE64 /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		830C3EFF2883556700AD9E0C /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
+		832F285128CD0ABF000BE496 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		832F285328CD0ABF000BE496 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		833B3A8A287B4AA60030FE64 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		833B3A8D287B4AA60030FE64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		833B3A91287B4AA60030FE64 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		832F285028CD0ABF000BE496 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				832F285128CD0ABF000BE496 /* PasswordTextField.swift */,
+				832F285328CD0ABF000BE496 /* PasswordViewController.swift */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
 		833B3A81287B4AA50030FE64 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +154,7 @@
 		833B3A8C287B4AA60030FE64 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				832F285028CD0ABF000BE496 /* Password */,
 				833B3A8D287B4AA60030FE64 /* AppDelegate.swift */,
 				833B3AA4287B4EFD0030FE64 /* Login */,
 				836B4A3E287CC02D0047F6B6 /* Onboarding */,
@@ -362,6 +376,7 @@
 				83A2AFB4288237B300461B59 /* AccountSummaryHeaderView.swift in Sources */,
 				83D8811A2888DA4900BBA476 /* UITextField+SecureToggle.swift in Sources */,
 				83F71BB7287F75F3002506AA /* DummyViewController.swift in Sources */,
+				832F285228CD0ABF000BE496 /* PasswordTextField.swift in Sources */,
 				83FEB2BD2884E7D100361188 /* CurrencyFormatter.swift in Sources */,
 				83FEB2BB2884E79C00361188 /* Decimal+Utils.swift in Sources */,
 				83D881182888D79900BBA476 /* NSNotificationName.swift in Sources */,
@@ -369,6 +384,7 @@
 				83488BC3288F2B1100778692 /* ShakeyBellView.swift in Sources */,
 				830C3F002883556700AD9E0C /* AccountSummaryCell.swift in Sources */,
 				83C9548F287CC9C8008DDF24 /* OnboardingViewController.swift in Sources */,
+				832F285428CD0ABF000BE496 /* PasswordViewController.swift in Sources */,
 				8376C1BF2880FD1E00C5AB0C /* MainViewController.swift in Sources */,
 				83A2AFB22882355A00461B59 /* AccountSummaryViewController.swift in Sources */,
 				833B3A8E287B4AA60030FE64 /* AppDelegate.swift in Sources */,
