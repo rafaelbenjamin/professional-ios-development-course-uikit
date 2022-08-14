@@ -9,9 +9,11 @@ import UIKit
 
 class PasswordViewController: UIViewController {
     
-    let newPasswordTextField = PasswordTextField(placeHolderText: "New password")
     let stackView = UIStackView()
-    let criteriaView = PasswordCriteriaView(text: "Uppercase letter (A-Z)")
+    let newPasswordTextField = PasswordTextField(placeHolderText: "New password")
+    let statusView = PasswordStatusView()
+    let confirmPasswordTextField = PasswordTextField(placeHolderText: "Re-enter new password")
+    let resetButton = UIButton(type: .system)
     
     override func viewDidLoad(){
         style()
@@ -23,17 +25,29 @@ class PasswordViewController: UIViewController {
 extension PasswordViewController {
     
     private func style() {
-        newPasswordTextField.translatesAutoresizingMaskIntoConstraints = false
-        criteriaView.translatesAutoresizingMaskIntoConstraints = false
-        
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 20
+        
+        newPasswordTextField.translatesAutoresizingMaskIntoConstraints = false
+       
+        statusView.translatesAutoresizingMaskIntoConstraints = false
+        statusView.layer.cornerRadius = 5
+        statusView.clipsToBounds = true
+        
+        confirmPasswordTextField.translatesAutoresizingMaskIntoConstraints = false
+        
+        resetButton.translatesAutoresizingMaskIntoConstraints = false
+        resetButton.configuration = .filled()
+        resetButton.setTitle("Reset password", for: [])
+        // resetButton.addTarget(self, action: #selector(resetPasswordButtonTapped), for: .primaryActionTriggered)
     }
     
     private func layout() {
-       // stackView.addArrangedSubview(newPasswordTextField)
-        stackView.addArrangedSubview(criteriaView)
+        stackView.addArrangedSubview(newPasswordTextField)
+        stackView.addArrangedSubview(statusView)
+        stackView.addArrangedSubview(confirmPasswordTextField)
+        stackView.addArrangedSubview(resetButton)
         view.addSubview(stackView)
         
         NSLayoutConstraint.activate([

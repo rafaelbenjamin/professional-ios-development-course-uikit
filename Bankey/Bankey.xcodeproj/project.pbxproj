@@ -11,6 +11,7 @@
 		832F285228CD0ABF000BE496 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F285128CD0ABF000BE496 /* PasswordTextField.swift */; };
 		832F285428CD0ABF000BE496 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F285328CD0ABF000BE496 /* PasswordViewController.swift */; };
 		832F285828CD0ABF000BE496 /* PasswordCriteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F285728CD0ABF000BE496 /* PasswordCriteriaView.swift */; };
+		832F285A28CD0ABF000BE496 /* PasswordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F285928CD0ABF000BE496 /* PasswordStatusView.swift */; };
 		833B3A8E287B4AA60030FE64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833B3A8D287B4AA60030FE64 /* AppDelegate.swift */; };
 		833B3A92287B4AA60030FE64 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833B3A91287B4AA60030FE64 /* LoginViewController.swift */; };
 		833B3A97287B4AA80030FE64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833B3A96287B4AA80030FE64 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		832F285128CD0ABF000BE496 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		832F285328CD0ABF000BE496 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		832F285728CD0ABF000BE496 /* PasswordCriteriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaView.swift; sourceTree = "<group>"; };
+		832F285928CD0ABF000BE496 /* PasswordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatusView.swift; sourceTree = "<group>"; };
 		833B3A8A287B4AA60030FE64 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		833B3A8D287B4AA60030FE64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		833B3A91287B4AA60030FE64 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				832F285728CD0ABF000BE496 /* PasswordCriteriaView.swift */,
+				832F285928CD0ABF000BE496 /* PasswordStatusView.swift */,
 			);
 			path = PasswordStatusView;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				836B4A40287CC04C0047F6B6 /* OnboardingContainerViewController.swift in Sources */,
 				83651C8B289F3B4A00136EEF /* SkeletonLoadable.swift in Sources */,
 				835C9F6628945A3D00DF8F63 /* AccountSummaryViewController+Networking.swift in Sources */,
+				832F285A28CD0ABF000BE496 /* PasswordStatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
