@@ -34,6 +34,7 @@
 		83A2AFB22882355A00461B59 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2AFB12882355A00461B59 /* AccountSummaryViewController.swift */; };
 		83A2AFB4288237B300461B59 /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2AFB3288237B300461B59 /* AccountSummaryHeaderView.swift */; };
 		83A2AFB6288237E100461B59 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A2AFB5288237E100461B59 /* AccountSummaryHeaderView.xib */; };
+		83AAE08E28AD5A5B00DAE1EF /* UIResponder+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AAE08D28AD5A5B00DAE1EF /* UIResponder+Utils.swift */; };
 		83C9548F287CC9C8008DDF24 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C9548E287CC9C8008DDF24 /* OnboardingViewController.swift */; };
 		83D881182888D79900BBA476 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D881172888D79900BBA476 /* NSNotificationName.swift */; };
 		83D8811A2888DA4900BBA476 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D881192888DA4900BBA476 /* UITextField+SecureToggle.swift */; };
@@ -84,6 +85,7 @@
 		83A2AFB12882355A00461B59 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		83A2AFB3288237B300461B59 /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		83A2AFB5288237E100461B59 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
+		83AAE08D28AD5A5B00DAE1EF /* UIResponder+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Utils.swift"; sourceTree = "<group>"; };
 		83C9548E287CC9C8008DDF24 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		83D881172888D79900BBA476 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		83D881192888DA4900BBA476 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		832F285028CD0ABF000BE496 /* Password */ = {
 			isa = PBXGroup;
 			children = (
+				83AAE08C28AD5A4800DAE1EF /* Utils */,
 				832F285128CD0ABF000BE496 /* PasswordTextField.swift */,
 				832F285328CD0ABF000BE496 /* PasswordViewController.swift */,
 				832F285528CD0ABF000BE496 /* PasswordStatusView */,
@@ -266,6 +269,14 @@
 				839B6DB828A1C02F00F344F2 /* Networking */,
 			);
 			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		83AAE08C28AD5A4800DAE1EF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				83AAE08D28AD5A5B00DAE1EF /* UIResponder+Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		83F71BB8287F7AE3002506AA /* Utils */ = {
@@ -406,6 +417,7 @@
 				832F285428CD0ABF000BE496 /* PasswordViewController.swift in Sources */,
 				8376C1BF2880FD1E00C5AB0C /* MainViewController.swift in Sources */,
 				83A2AFB22882355A00461B59 /* AccountSummaryViewController.swift in Sources */,
+				83AAE08E28AD5A5B00DAE1EF /* UIResponder+Utils.swift in Sources */,
 				833B3A8E287B4AA60030FE64 /* AppDelegate.swift in Sources */,
 				836B4A40287CC04C0047F6B6 /* OnboardingContainerViewController.swift in Sources */,
 				83651C8B289F3B4A00136EEF /* SkeletonLoadable.swift in Sources */,
