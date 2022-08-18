@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8307926F28AEC4A500B05441 /* PasswordStatusViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307926E28AEC4A500B05441 /* PasswordStatusViewTest.swift */; };
+		8307927128AECB6A00B05441 /* PasswordViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307927028AECB6A00B05441 /* PasswordViewControllerTests.swift */; };
 		830C3F002883556700AD9E0C /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C3EFF2883556700AD9E0C /* AccountSummaryCell.swift */; };
 		8310FB4928A980EC006CD53C /* PasswordCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310FB4828A980EC006CD53C /* PasswordCriteria.swift */; };
 		832F285228CD0ABF000BE496 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F285128CD0ABF000BE496 /* PasswordTextField.swift */; };
@@ -35,6 +37,7 @@
 		83A2AFB4288237B300461B59 /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2AFB3288237B300461B59 /* AccountSummaryHeaderView.swift */; };
 		83A2AFB6288237E100461B59 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A2AFB5288237E100461B59 /* AccountSummaryHeaderView.xib */; };
 		83AAE08E28AD5A5B00DAE1EF /* UIResponder+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AAE08D28AD5A5B00DAE1EF /* UIResponder+Utils.swift */; };
+		83AAE09128AEBA6500DAE1EF /* PasswordCriteriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AAE09028AEBA6500DAE1EF /* PasswordCriteriaTests.swift */; };
 		83C9548F287CC9C8008DDF24 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C9548E287CC9C8008DDF24 /* OnboardingViewController.swift */; };
 		83D881182888D79900BBA476 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D881172888D79900BBA476 /* NSNotificationName.swift */; };
 		83D8811A2888DA4900BBA476 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D881192888DA4900BBA476 /* UITextField+SecureToggle.swift */; };
@@ -55,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8307926E28AEC4A500B05441 /* PasswordStatusViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatusViewTest.swift; sourceTree = "<group>"; };
+		8307927028AECB6A00B05441 /* PasswordViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewControllerTests.swift; sourceTree = "<group>"; };
 		830C3EFF2883556700AD9E0C /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 		8310FB4828A980EC006CD53C /* PasswordCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteria.swift; sourceTree = "<group>"; };
 		832F285128CD0ABF000BE496 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
@@ -86,6 +91,7 @@
 		83A2AFB3288237B300461B59 /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		83A2AFB5288237E100461B59 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
 		83AAE08D28AD5A5B00DAE1EF /* UIResponder+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Utils.swift"; sourceTree = "<group>"; };
+		83AAE09028AEBA6500DAE1EF /* PasswordCriteriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaTests.swift; sourceTree = "<group>"; };
 		83C9548E287CC9C8008DDF24 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		83D881172888D79900BBA476 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		83D881192888DA4900BBA476 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
@@ -135,10 +141,10 @@
 		832F285028CD0ABF000BE496 /* Password */ = {
 			isa = PBXGroup;
 			children = (
-				83AAE08C28AD5A4800DAE1EF /* Utils */,
 				832F285128CD0ABF000BE496 /* PasswordTextField.swift */,
 				832F285328CD0ABF000BE496 /* PasswordViewController.swift */,
 				832F285528CD0ABF000BE496 /* PasswordStatusView */,
+				83AAE08C28AD5A4800DAE1EF /* Utils */,
 			);
 			path = Password;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 		836E0D80288630A900C71942 /* BankeyTests */ = {
 			isa = PBXGroup;
 			children = (
+				83AAE08F28AEBA2900DAE1EF /* Password */,
 				83651C842897328B00136EEF /* AccountSummary */,
 				83651C832897328000136EEF /* Utils */,
 			);
@@ -277,6 +284,16 @@
 				83AAE08D28AD5A5B00DAE1EF /* UIResponder+Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		83AAE08F28AEBA2900DAE1EF /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				83AAE09028AEBA6500DAE1EF /* PasswordCriteriaTests.swift */,
+				8307926E28AEC4A500B05441 /* PasswordStatusViewTest.swift */,
+				8307927028AECB6A00B05441 /* PasswordViewControllerTests.swift */,
+			);
+			path = Password;
 			sourceTree = "<group>";
 		};
 		83F71BB8287F7AE3002506AA /* Utils */ = {
@@ -430,10 +447,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83AAE09128AEBA6500DAE1EF /* PasswordCriteriaTests.swift in Sources */,
 				836E0D892886314B00C71942 /* CurrencyFormatterTests.swift in Sources */,
 				83651C89289734EE00136EEF /* AccountTests.swift in Sources */,
 				83651C872897346E00136EEF /* ProfileTests.swift in Sources */,
 				839B6DBC28A1C18800F344F2 /* AccountSummaryViewControllerTests.swift in Sources */,
+				8307926F28AEC4A500B05441 /* PasswordStatusViewTest.swift in Sources */,
+				8307927128AECB6A00B05441 /* PasswordViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
