@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func displayLogin(){
-        setRootViewController(passwordViewController)
+        setRootViewController(onboardingViewController)
     }
     
     private func displayNextScreen(){

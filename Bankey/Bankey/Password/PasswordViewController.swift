@@ -34,6 +34,11 @@ extension PasswordViewController {
         setupConfirmPassword()
         setupDismissKeyboardGesture()
         setupKeyboardHiding()
+        setupNavigationBar()
+    }
+    
+    func setupNavigationBar(){
+        navigationController?.navigationBar.tintColor = .label
     }
     
     private func setupNewPassword() {

@@ -41,6 +41,12 @@ class AccountSummaryViewController: UIViewController {
         return barButtomItem
     }()
     
+    lazy var resetPasswordBarButtonItem: UIBarButtonItem = {
+        let barButtomItem = UIBarButtonItem(title: "Reset Password", style: .plain, target: self, action: #selector(resetPasswordTapped))
+        barButtomItem.tintColor = .label
+        return barButtomItem
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -89,7 +95,7 @@ extension AccountSummaryViewController {
     }
     
     func setupNavigationBar(){
-        navigationItem.rightBarButtonItem = logoutBarButtonItem
+        navigationItem.rightBarButtonItems = [logoutBarButtonItem, resetPasswordBarButtonItem]
     }
     
     private func setupRefreshControl() {
@@ -234,6 +240,11 @@ extension AccountSummaryViewController {
 extension AccountSummaryViewController {
     @objc func logoutTapped(sender: UIButton) {
         NotificationCenter.default.post(name: .logout, object: nil)
+    }
+    
+    @objc func resetPasswordTapped(sender: UIButton) {
+        let vc = PasswordViewController()
+        navigationController?.pushViewController(vc, animated: false)
     }
     
     @objc func refreshContent() {
