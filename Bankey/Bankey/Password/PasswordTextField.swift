@@ -63,7 +63,7 @@ extension PasswordTextField {
         lockImageView.translatesAutoresizingMaskIntoConstraints = false
         
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.isSecureTextEntry = false // true
+        textField.isSecureTextEntry = true
         textField.placeholder = placeHolderText
         textField.delegate = self
         textField.keyboardType = .asciiCapable

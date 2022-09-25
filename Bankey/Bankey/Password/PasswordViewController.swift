@@ -17,12 +17,24 @@ class PasswordViewController: UIViewController {
     let confirmPasswordTextField = PasswordTextField(placeHolderText: "Re-enter new password")
     let resetButton = UIButton(type: .system)
     
+    var isValidNewPassword:Bool = false
+    var isValidConfirmPassword:Bool = false
+    
     var alert: UIAlertController?
     
     override func viewDidLoad(){
         setup()
         style()
         layout()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIView.setAnimationsEnabled(false)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        UIView.setAnimationsEnabled(false)
     }
     
 }
@@ -62,6 +74,10 @@ extension PasswordViewController {
             self.statusView.updateDisplay(text)
             if !self.statusView.validate(text) {
                 return (false, "Your password must meet the requirements below")
+            }
+            
+            guard text == self.confirmPasswordTextField.text else {
+                return (false, "Passwords do not match.")
             }
             
             return (true, "")
@@ -119,6 +135,7 @@ extension PasswordViewController {
         resetButton.configuration = .filled()
         resetButton.setTitle("Reset password", for: [])
         resetButton.addTarget(self, action: #selector(resetPasswordButtonTapped), for: .primaryActionTriggered)
+        resetButton.isEnabled = false
     }
     
     private func layout() {
@@ -145,12 +162,19 @@ extension PasswordViewController: PasswordTextFieldDelegate {
     }
     
     func editingDidEnd(_ sender: PasswordTextField) {
+        
         if sender === newPasswordTextField {
             // as soon as we lose focus, make ❌ appear
             statusView.shouldResetCriteria = false
-            _ = newPasswordTextField.validate()
+            isValidNewPassword = newPasswordTextField.validate()
         } else if sender == confirmPasswordTextField {
-            _ = confirmPasswordTextField.validate()
+            isValidConfirmPassword = confirmPasswordTextField.validate()
+        }
+        
+        if isValidNewPassword && isValidConfirmPassword {
+            resetButton.isEnabled = true
+        } else {
+            resetButton.isEnabled = false
         }
     }
 }
@@ -194,9 +218,6 @@ extension PasswordViewController {
     
     @objc func resetPasswordButtonTapped(sender: UIButton) {
         view.endEditing(true)
-        
-        let isValidNewPassword = newPasswordTextField.validate()
-        let isValidConfirmPassword = confirmPasswordTextField.validate()
         
         if isValidNewPassword && isValidConfirmPassword {
             showAlert(title: "Success", message: "You have successfully changed your password.")
