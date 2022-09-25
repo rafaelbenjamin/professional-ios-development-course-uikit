@@ -21,6 +21,8 @@
 		833B3A9A287B4AA80030FE64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 833B3A98287B4AA80030FE64 /* LaunchScreen.storyboard */; };
 		833B3AA6287B4F1B0030FE64 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833B3AA5287B4F1B0030FE64 /* LoginView.swift */; };
 		83488BC3288F2B1100778692 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83488BC2288F2B1100778692 /* ShakeyBellView.swift */; };
+		835A6AAD28E4F15900C11FD5 /* SkeletonHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AAC28E4F15900C11FD5 /* SkeletonHeaderView.xib */; };
+		835A6AAF28E4F17900C11FD5 /* SkeletonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A6AAE28E4F17900C11FD5 /* SkeletonHeaderView.swift */; };
 		835C9F642894598400DF8F63 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C9F632894598400DF8F63 /* Date+Utils.swift */; };
 		835C9F6628945A3D00DF8F63 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C9F6528945A3D00DF8F63 /* AccountSummaryViewController+Networking.swift */; };
 		83651C872897346E00136EEF /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83651C862897346E00136EEF /* ProfileTests.swift */; };
@@ -74,6 +76,8 @@
 		833B3A9B287B4AA80030FE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		833B3AA5287B4F1B0030FE64 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		83488BC2288F2B1100778692 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
+		835A6AAC28E4F15900C11FD5 /* SkeletonHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkeletonHeaderView.xib; sourceTree = "<group>"; };
+		835A6AAE28E4F17900C11FD5 /* SkeletonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonHeaderView.swift; sourceTree = "<group>"; };
 		835C9F632894598400DF8F63 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		835C9F6528945A3D00DF8F63 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 		83651C862897346E00136EEF /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 			children = (
 				83A2AFB3288237B300461B59 /* AccountSummaryHeaderView.swift */,
 				83A2AFB5288237E100461B59 /* AccountSummaryHeaderView.xib */,
+				835A6AAC28E4F15900C11FD5 /* SkeletonHeaderView.xib */,
+				835A6AAE28E4F17900C11FD5 /* SkeletonHeaderView.swift */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -392,6 +398,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835A6AAD28E4F15900C11FD5 /* SkeletonHeaderView.xib in Resources */,
 				83A2AFB6288237E100461B59 /* AccountSummaryHeaderView.xib in Resources */,
 				833B3A9A287B4AA80030FE64 /* LaunchScreen.storyboard in Resources */,
 				833B3A97287B4AA80030FE64 /* Assets.xcassets in Resources */,
@@ -433,6 +440,7 @@
 				832F285828CD0ABF000BE496 /* PasswordCriteriaView.swift in Sources */,
 				832F285428CD0ABF000BE496 /* PasswordViewController.swift in Sources */,
 				8376C1BF2880FD1E00C5AB0C /* MainViewController.swift in Sources */,
+				835A6AAF28E4F17900C11FD5 /* SkeletonHeaderView.swift in Sources */,
 				83A2AFB22882355A00461B59 /* AccountSummaryViewController.swift in Sources */,
 				83AAE08E28AD5A5B00DAE1EF /* UIResponder+Utils.swift in Sources */,
 				833B3A8E287B4AA60030FE64 /* AppDelegate.swift in Sources */,

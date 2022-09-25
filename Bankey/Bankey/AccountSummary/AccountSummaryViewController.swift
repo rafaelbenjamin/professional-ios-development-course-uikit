@@ -15,11 +15,13 @@ class AccountSummaryViewController: UIViewController {
     
     //View Models
     var headerViewModel = AccountSummaryHeaderView.ViewModel(welcomeMessage: "Welcome", name: "", date: Date())
+    var skeletonHeaderViewModel = SkeletonHeaderView.ViewModel(welcomeMessage: "Welcome", name: "-----", date: Date())
     var accountCellViewModels: [AccountSummaryCell.ViewModel] = []
     
     //Components
     var tableView = UITableView()
     var headerView = AccountSummaryHeaderView(frame: .zero)
+    var skeletonHeaderView = SkeletonHeaderView(frame: .zero)
     let refreshControl = UIRefreshControl()
     
     //Networking
@@ -87,11 +89,21 @@ extension AccountSummaryViewController {
     }
     
     private func setupTableHeaderView(){
-        var size = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
-        size.width = UIScreen.main.bounds.width
-        headerView.frame.size = size
         
-        tableView.tableHeaderView = headerView
+        if isLoaded {
+            var size = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+            size.width = UIScreen.main.bounds.width
+            headerView.frame.size = size
+            
+            tableView.tableHeaderView = headerView
+        } else {
+            var size = skeletonHeaderView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+            size.width = UIScreen.main.bounds.width
+            skeletonHeaderView.frame.size = size
+            
+            tableView.tableHeaderView = skeletonHeaderView
+        }
+      
     }
     
     func setupNavigationBar(){
@@ -140,7 +152,6 @@ extension AccountSummaryViewController: UITableViewDelegate {
 }
 
 // MARK: - Networking
-// MARK: - Networking
 extension AccountSummaryViewController {
     private func fetchData() {
         let group = DispatchGroup()
@@ -188,6 +199,7 @@ extension AccountSummaryViewController {
         guard let profile = self.profile else { return }
         
         self.isLoaded = true
+        self.setupTableHeaderView()
         self.configureTableHeaderView(with: profile)
         self.configureTableCells(with: self.accounts)
         self.tableView.reloadData()
