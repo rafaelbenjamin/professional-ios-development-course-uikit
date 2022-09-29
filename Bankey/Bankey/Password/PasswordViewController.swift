@@ -28,15 +28,6 @@ class PasswordViewController: UIViewController {
         layout()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        UIView.setAnimationsEnabled(false)
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        UIView.setAnimationsEnabled(false)
-    }
-    
 }
 
 extension PasswordViewController {
