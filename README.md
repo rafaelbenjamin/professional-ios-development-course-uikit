@@ -26,4 +26,4 @@ A simple app called 'Bankey', which consists of the features:
 
 ### Video:
 
-
+https://user-images.githubusercontent.com/3516793/193117680-44d4f4af-0952-4193-948c-b0c387ee9066.mp4
