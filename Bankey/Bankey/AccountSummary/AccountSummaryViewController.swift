@@ -23,6 +23,7 @@ class AccountSummaryViewController: UIViewController {
     var headerView = AccountSummaryHeaderView(frame: .zero)
     var skeletonHeaderView = SkeletonHeaderView(frame: .zero)
     let refreshControl = UIRefreshControl()
+    var networkError:NetworkError? = nil
     
     //Networking
     var profileManager: ProfileManageable = ProfileManager()
@@ -164,6 +165,9 @@ extension AccountSummaryViewController {
         
         group.notify(queue: .main) {
             self.reloadView()
+            if let error = self.networkError {
+                self.displayError(error)
+            }
         }
     }
     
@@ -174,7 +178,7 @@ extension AccountSummaryViewController {
             case .success(let profile):
                 self.profile = profile
             case .failure(let error):
-                self.displayError(error)
+                self.networkError = error
             }
             group.leave()
         }
@@ -187,7 +191,7 @@ extension AccountSummaryViewController {
             case .success(let accounts):
                 self.accounts = accounts
             case .failure(let error):
-                self.displayError(error)
+                self.networkError = error
             }
             group.leave()
         }
@@ -244,7 +248,7 @@ extension AccountSummaryViewController {
         errorAlert.title = title
         errorAlert.message = message
         
-        present(errorAlert, animated: true, completion: nil)
+        self.present(errorAlert, animated: true, completion: nil)
     }
 }
 
